@@ -25,6 +25,20 @@ hr {
     padding: 0;
 }
 
+h1 {
+ font-family: "Courier";
+ font-size: 60px;
+}
+
+h2 {
+  font-family: "Courier";
+  font-size: 36px;
+}
+
+h3 {
+  font-family: 
+}
+
 audio,
 canvas,
 iframe,
