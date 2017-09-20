@@ -37,6 +37,7 @@ h1 {
  font-size: 86px;
  color: #303030;
  margin-top: 0;
+ text-align: center;
 }
 
 h2 {
@@ -82,6 +83,21 @@ p {
   margin: 0;
 }
 
+.heading {
+  display: block;
+  position: absolute;
+  margin-left: 20%;
+  padding-top: 6%;
+}
+
+.masthead-img {
+  display: inline;
+  position: relative;
+  padding-top: 10%;
+  height: 100%;
+  width: 100%;
+}
+
 .navigation {
   min-height: 780px;
   display: flex;
@@ -89,6 +105,8 @@ p {
   flex-direction: row;
   align-items: stretch;
   align-content: stretch;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .colonial-nav {
@@ -98,8 +116,16 @@ p {
   flex-basis: 25%;
   margin: 10px;
   text-align: center;
+  transition: background 0.25s linear;
 }
 
+.colonial-nav:hover {
+  background: #B25A44;
+}
+
+.colonial-nav:hover h2 {
+  color: #fbf1dc;
+}
 
 .neoclassical-nav {
   order: 2;
@@ -108,6 +134,15 @@ p {
   flex-basis: 25%;
   margin: 10px;
   text-align: center;
+  transition: background 0.25s linear;
+}
+
+.neoclassical-nav:hover {
+  background: #B25A44;
+}
+
+.neoclassical-nav:hover h2 {
+  color: #fbf1dc;
 }
 
 .victorian-nav {
@@ -117,6 +152,15 @@ p {
   flex-basis: 25%;
   margin: 10px;
   text-align: center;
+  transition: background 0.25s linear;
+}
+
+.victorian-nav:hover {
+  background: #B25A44;
+}
+
+.victorian-nav:hover h2 {
+  color: #fbf1dc;
 }
 
 .gilded-nav {
@@ -126,6 +170,15 @@ p {
   flex-basis: 25%;
   margin: 10px;
   text-align: center;
+  transition: background 0.25s linear;
+}
+
+.gilded-nav:hover {
+  background: #B25A44;
+}
+
+.gilded-nav:hover h2 {
+  color: #fbf1dc;
 }
 
 .FLW-nav {
@@ -135,6 +188,15 @@ p {
   flex-basis: 25%;
   margin: 10px;
   text-align: center;
+  transition: background 0.25s linear;
+}
+
+.FLW-nav:hover {
+  background: #B25A44;
+}
+
+.FLW-nav:hover h2 {
+  color: #fbf1dc;
 }
 
 .mid-century-nav {
@@ -144,6 +206,15 @@ p {
   flex-basis: 25%;
   margin: 10px;
   text-align: center;
+  transition: background 0.25s linear;
+}
+
+.mid-century-nav:hover {
+  background: #B25A44;
+}
+
+.mid-century-nav:hover h2 {
+  color: #fbf1dc;
 }
 
 .colonial {
