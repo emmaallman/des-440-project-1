@@ -6,6 +6,13 @@ html {
     line-height: 1.4;
 }
 
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -27,16 +34,165 @@ hr {
 
 h1 {
  font-family: "Courier";
- font-size: 60px;
+ font-size: 86px;
+ color: #303030;
+ margin-top: 0;
 }
 
 h2 {
   font-family: "Courier";
-  font-size: 36px;
+  font-size: 46px;
+  line-height: 52px;
+  color: #303030;
 }
 
 h3 {
-  font-family: 
+  font-family:"Roboto Condensed";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b25a44;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+
+.outer-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fbf1dc;
+}
+
+.inner-wrapper{
+  position: relative;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+.masthead {
+  min-height: 780px;
+  background-color: #fbf1dc;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation {
+  min-height: 780px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.colonial-nav {
+  order: 1;
+  flex-grow: 1;
+  background-color: #B1C9C5;
+  flex-basis: 25%;
+  margin: 10px;
+  text-align: center;
+}
+
+
+.neoclassical-nav {
+  order: 2;
+  flex-grow: 1;
+  background-color: #B1C9C5;
+  flex-basis: 25%;
+  margin: 10px;
+  text-align: center;
+}
+
+.victorian-nav {
+  order: 3;
+  flex-grow: 1;
+  background-color: #B1C9C5;
+  flex-basis: 25%;
+  margin: 10px;
+  text-align: center;
+}
+
+.gilded-nav {
+  order: 4;
+  flex-grow: 1;
+  background-color: #B1C9C5;
+  flex-basis: 25%;
+  margin: 10px;
+  text-align: center;
+}
+
+.FLW-nav {
+  order: 5;
+  flex-grow: 1;
+  background-color: #B1C9C5;
+  flex-basis: 25%;
+  margin: 10px;
+  text-align: center;
+}
+
+.mid-century-nav {
+  order: 6;
+  flex-grow: 1;
+  background-color: #B1C9C5;
+  flex-basis: 25%;
+  margin: 10px;
+  text-align: center;
+}
+
+.colonial {
+  min-height: 780px;
+  background-color: #fbf1cc;
+}
+
+.neoclassical {
+  min-height: 780px;
+  background-color: #fbf1fc;
+  order: 2;
+}
+
+.pullquote {
+  min-height: 280px;
+  background-color: #fbf1bc;
+}
+
+.victorian {
+  min-height: 780px;
+  background-color: #fbf1ac;
+  order: 3;
+}
+
+.gilded {
+  min-height: 780px;
+  background-color: #fbf1fc;
+  order: 4;
+}
+
+.FLW {
+  min-height: 780px;
+  background-color: #fbf1ac;
+  order: 5;
+}
+
+.mid-century {
+  min-height: 780px;
+  background-color: #fbf1fc;
+  order: 6;
+}
+
+.masthead h1 {
+  line-height: 74px;
+}
+
+.navigation h2 {
+  color: #B25A44;
+
 }
 
 audio,
