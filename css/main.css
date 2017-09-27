@@ -43,7 +43,7 @@ h1 {
 h2 {
   font-family: "Courier";
   font-size: 46px;
-  line-height: 52px;
+  line-height: 1.13;
   color: #303030;
 }
 
@@ -53,6 +53,7 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   color: #b25a44;
+  line-height: 0px;
 }
 
 p {
@@ -76,7 +77,7 @@ p {
 }
 
 .masthead {
-  min-height: 780px;
+  /*min-height: 780px;*/
   background-color: #fbf1dc;
   background-size: cover;
   padding: 0;
@@ -85,15 +86,20 @@ p {
 
 .heading {
   display: block;
-  position: absolute;
-  margin-left: 20%;
+  /*position: absolute;*/
+  margin-right: 20%;
   padding-top: 6%;
+}
+.heading h1 {
+  font-size: 8vw;
+  line-height: 0.9;
 }
 
 .masthead-img {
   display: inline;
   position: relative;
-  padding-top: 10%;
+  /*padding-top: 10%;*/
+  margin-top: -7%;
   height: 100%;
   width: 100%;
 }
@@ -109,14 +115,20 @@ p {
   padding-bottom: 10%;
 }
 
-.colonial-nav {
-  order: 1;
-  flex-grow: 1;
+.navigation > div {
+  flex-grow: 0;
+  flex-shrink: 0;
   background-color: #B1C9C5;
-  flex-basis: 25%;
+  flex-basis: calc(33.333% - 20px);
+  width: calc(33.333% - 20px);
   margin: 10px;
+  height: 300px;
   text-align: center;
   transition: background 0.25s linear;
+}
+
+.colonial-nav {
+  /*order: 1;*/
 }
 
 .colonial-nav:hover {
@@ -127,9 +139,9 @@ p {
   color: #fbf1dc;
 }
 
+
 .neoclassical-nav {
-  order: 2;
-  flex-grow: 1;
+
   background-color: #B1C9C5;
   flex-basis: 25%;
   margin: 10px;
@@ -146,8 +158,7 @@ p {
 }
 
 .victorian-nav {
-  order: 3;
-  flex-grow: 1;
+
   background-color: #B1C9C5;
   flex-basis: 25%;
   margin: 10px;
@@ -164,8 +175,7 @@ p {
 }
 
 .gilded-nav {
-  order: 4;
-  flex-grow: 1;
+
   background-color: #B1C9C5;
   flex-basis: 25%;
   margin: 10px;
@@ -182,8 +192,7 @@ p {
 }
 
 .FLW-nav {
-  order: 5;
-  flex-grow: 1;
+
   background-color: #B1C9C5;
   flex-basis: 25%;
   margin: 10px;
@@ -200,8 +209,7 @@ p {
 }
 
 .mid-century-nav {
-  order: 6;
-  flex-grow: 1;
+
   background-color: #B1C9C5;
   flex-basis: 25%;
   margin: 10px;
@@ -220,6 +228,10 @@ p {
 .colonial {
   min-height: 780px;
   background-color: #fbf1cc;
+}
+
+.colonial-text {
+  max-width: 40%;
 }
 
 .neoclassical {
@@ -257,9 +269,9 @@ p {
   order: 6;
 }
 
-.masthead h1 {
+/*.masthead h1 {
   line-height: 74px;
-}
+}*/
 
 .navigation h2 {
   color: #B25A44;
