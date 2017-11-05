@@ -41,34 +41,33 @@
 <div class="inner-wrapper">
         <div class="navigation">
 
-          <div class="colonial-nav">
+          <div class="colonial-nav" onclick="handleScroll('#colonial')">
             <h2>Colonial</h2>
           </div>
 
-          <div class="neoclassical-nav">
+          <div class="neoclassical-nav" onclick="handleScroll('#neoclassical')">
             <h2>Neo-classical</h2>
           </div>
 
-          <div class="victorian-nav">
+          <div class="victorian-nav" onclick="handleScroll('#victorian')">
             <h2>Victorian</h2>
           </div>
 
-          <div class="gilded-nav">
+          <div class="gilded-nav" onclick="handleScroll('#gilded')">
             <h2>Gilded</h2>
           </div>
 
-          <div class="FLW-nav">
+          <div class="FLW-nav" onclick="handleScroll('#FLW')">
             <h2>Frank Loyld Wright</h2>
           </div>
 
-          <div class="mid-century-nav">
+          <div class="mid-century-nav" onclick="handleScroll('#mid-century')">
             <h2>Mid-Century</h2>
           </div>
 
-
         </div>
 
-        <div class="colonial">
+        <div class="colonial" id="colonial">
 
         <div class="colonial-text">
           <h2>Colonial</h2>
@@ -88,9 +87,13 @@
         </ul>
       </div>
 
+      <div class="colonial-illustration">
+        <img src="images/illustrations-02.png">
+      </div>
+
         </div>
 
-        <div class="neoclassical">
+        <div class="neoclassical" id="neoclassical">
           <div class="neoclassical-text">
         <h2>Neoclassical</h2>
         <h3>1780-1860s</h3>
@@ -115,7 +118,7 @@
           Marc-Antoine Laugier</h3>
         </div>
 
-          <div class="victorian">
+          <div class="victorian" id="victorian">
           <h2>Victorian</h2>
           <h3>1840-1900s</h3>
           <p>With the railroad, came new materials for building homes. The Victorian style was a direct result of this. New shapes and ornamentation
@@ -132,7 +135,7 @@
           </div>
 
 
-        <div class="gilded">
+        <div class="gilded" id="gilded">
           <h2>Gilded</h2>
           <h3>1800-1920s</h3>
           <p>The pinnacle of hihg-class architecture in America was the Gilded era. The upper class would build lavish homes, specifically in New
@@ -148,7 +151,7 @@
             </ul>
           </div>
 
-          <div class="FLW">
+          <div class="FLW" id="FLW">
             <h2>Frank Loyld Wright</h2>
             <h3>1900-1950s</h3>
             <p>The most famous architect from America was, and still is, Frank Loyld Wright. He was the pioneer of modern architecture in America.
@@ -163,7 +166,7 @@
               </ul>
             </div>
 
-            <div class="mid-century">
+            <div class="mid-century" id="mid-century">
               <h2>Mid-Century</h2>
               <h3>1930-1960s</h3>
               <p>Post-WWII architecture was created from leftover and used materials from the war. This causes the mixture of natural and mechanical
