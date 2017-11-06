@@ -1,6 +1,6 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 /*This is some further normalization and base styles. */
-html {
+  html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -53,7 +53,7 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   color: #b25a44;
-  line-height: 0px;
+  line-height: 10px;
 }
 
 p {
@@ -86,8 +86,8 @@ p {
 
 .heading {
   display: block;
-  /*position: absolute;*/
-  margin-right: 20%;
+  position: absolute;
+  margin-left: 100px;
   padding-top: 6%;
 }
 .heading h1 {
@@ -99,8 +99,7 @@ p {
   display: inline;
   position: relative;
   /*padding-top: 10%;*/
-  margin-top: -7%;
-  height: 100%;
+  margin-top: 120px;
   width: 100%;
 }
 
@@ -142,7 +141,6 @@ p {
 
 
 .neoclassical-nav {
-
   background-color: #B1C9C5;
   flex-basis: 25%;
   margin: 10px;
@@ -227,53 +225,187 @@ p {
 }
 
 .colonial {
-  min-height: 780px;
-  background-color: #fbf1cc;
+  min-height: 520px;
+  background-color: #fbf1dc;
+  padding: 20px;
+}
+
+.colonial h2 {
+  line-height: 0px;
 }
 
 .colonial-text {
-  display: inline-block;
+  display: block;
   float: left;
-  padding: .02%;
+  width: 50%;
+}
+
+.colonial-famous {
+  display: block;
+  float: left;
+  width: 50%;
+  clear: both;
 }
 
 .colonial-illustration {
-
+  display: inline;
+  margin: 6em;
 }
 
 .neoclassical {
-  min-height: 780px;
-  background-color: #fbf1fc;
+  min-height: 520px;
   order: 2;
+  background-color: #fbf1dc;
+  padding: 20px;
+}
+
+.neoclassical h2 {
+  line-height: 0px;
+}
+
+.neoclassical-text {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.neoclassical-famous {
+  display: block;
+  float: left;
+  width: 50%;
+  clear: both;
+}
+
+.neoclassical-illustration {
+  display: inline;
+  margin: 6em;
 }
 
 .pullquote {
   min-height: 280px;
-  background-color: #fbf1bc;
+  background-color: #b25a44;
+  text-align: center;
+  padding: 70px;
+}
+
+.pullquote h3 {
+  line-height: 24px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fbf1dc;
 }
 
 .victorian {
-  min-height: 780px;
-  background-color: #fbf1ac;
-  order: 3;
+  min-height: 520px;
+  background-color: #fbf1dc;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.victorian h2 {
+  line-height: 0px;
+}
+
+.victorian-text {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.victorian-famous {
+  display: block;
+  float: left;
+  width: 50%;
+  clear: both;
+}
+
+.victorian-illustration {
+  display: inline;
+  margin: 6em;
 }
 
 .gilded {
-  min-height: 780px;
-  background-color: #fbf1fc;
-  order: 4;
+  min-height: 520px;
+  background-color: #fbf1dc;
+  padding: 20px;
+}
+
+.gilded h2 {
+  line-height: 0px;
+}
+
+.gilded-text {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.gilded-famous {
+  display: block;
+  float: left;
+  width: 50%;
+  clear: both;
+}
+
+.gilded-illustration {
+  display: inline;
+  margin: 10em;
 }
 
 .FLW {
-  min-height: 780px;
-  background-color: #fbf1ac;
-  order: 5;
+  min-height: 520px;
+  background-color: #fbf1dc;
+  padding: 20px;
+}
+
+.FLW h2 {
+  line-height: 0px;
+}
+
+.FLW-text {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.FLW-famous {
+  display: block;
+  float: left;
+  width: 50%;
+  clear: both;
+}
+
+.FLW-illustration {
+  display: inline;
+  margin: 6em;
 }
 
 .mid-century {
-  min-height: 780px;
-  background-color: #fbf1fc;
-  order: 6;
+  min-height: 520px;
+  background-color: #fbf1dc;
+  padding: 20px;
+}
+
+.mid-century h2 {
+  line-height: 0px;
+}
+
+.mid-century-text {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.mid-century-famous {
+  display: block;
+  float: left;
+  width: 50%;
+  clear: both;
+}
+
+.mid-century-illustration {
+  display: inline;
+  margin: 6em;
 }
 
 /*.masthead h1 {
