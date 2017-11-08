@@ -95,6 +95,14 @@ p {
   line-height: 0.9;
 }
 
+.heading h3 {
+  font-size: 3vw;
+  padding-left: 46%;
+  line-height: 0px;
+  margin-top: -2%;
+  text-transform: lowercase;
+}
+
 .masthead-img {
   display: inline;
   position: relative;
@@ -118,13 +126,29 @@ p {
   flex-grow: 0;
   flex-shrink: 0;
   background-color: #B1C9C5;
-  flex-basis: calc(33.333% - 20px);
-  width: calc(33.333% - 20px);
+  flex-basis: 100%;
+  width: 100%;
   margin: 10px;
   height: 300px;
   text-align: center;
   transition: background 0.25s linear;
   cursor: pointer;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .navigation > div {
+    flex-basis: calc(50% - 20px);
+    width: calc(50% - 20px);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .navigation > div {
+    flex-basis: calc(33.333% - 20px);
+    width: calc(33.333% - 20px);
+  }
 }
 
 .colonial-nav {
@@ -224,61 +248,98 @@ p {
   color: #fbf1dc;
 }
 
+
+
+.cat-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-wrapper {
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+.text-wrapper {
+
+}
+
+/* TABLET UP */
+@media screen and (min-width: 768px) {
+  .cat-section {
+    flex-direction: row;
+
+  }
+  .img-wrapper {
+    padding-left: 20px;
+    padding-right: 0px;
+    flex-basis: 40%;
+  }
+  .text-wrapper {
+    padding-right: 20px;
+    flex-basis: 60%;
+  }
+}
+
+
 .colonial {
-  min-height: 520px;
+  /*min-height: 520px;*/
   background-color: #fbf1dc;
   padding: 20px;
 }
 
 .colonial h2 {
-  line-height: 0px;
+  line-height: 1;
 }
 
 .colonial-text {
-  display: block;
-  float: left;
-  width: 50%;
+  /*display: block;*/
+  /*float: left;*/
+  /*width: 50%;*/
 }
 
 .colonial-famous {
-  display: block;
-  float: left;
-  width: 50%;
-  clear: both;
+  /*display: block;*/
+  /*float: left;*/
+  /*width: 50%;*/
+  /*clear: both;*/
 }
 
 .colonial-illustration {
-  display: inline;
-  margin: 6em;
+  /*display: inline;*/
+  /*margin: 6em;*/
+  /*width: 50%;*/
+  /*float: right;*/
 }
 
 .neoclassical {
-  min-height: 520px;
-  order: 2;
+  /*min-height: 520px;
+  order: 2;*/
   background-color: #fbf1dc;
   padding: 20px;
+  padding-top: 100px;
 }
 
 .neoclassical h2 {
-  line-height: 0px;
+  line-height: 1;
 }
 
 .neoclassical-text {
-  display: block;
+  /*display: block;
   float: left;
-  width: 50%;
+  width: 50%;*/
 }
 
 .neoclassical-famous {
-  display: block;
+  /*display: block;
   float: left;
   width: 50%;
-  clear: both;
+  clear: both;*/
 }
 
 .neoclassical-illustration {
-  display: inline;
-  margin: 6em;
+  /*display: inline;
+  margin: 6em;*/
 }
 
 .pullquote {
@@ -286,6 +347,7 @@ p {
   background-color: #b25a44;
   text-align: center;
   padding: 70px;
+  margin-top: 100px;
 }
 
 .pullquote h3 {
@@ -296,7 +358,7 @@ p {
 }
 
 .victorian {
-  min-height: 520px;
+  /*min-height: 520px;*/
   background-color: #fbf1dc;
   padding: 20px;
   margin-top: 80px;
@@ -307,27 +369,40 @@ p {
 }
 
 .victorian-text {
-  display: block;
+  /*display: block;
   float: left;
-  width: 50%;
+  width: 50%;*/
 }
 
 .victorian-famous {
-  display: block;
+  /*display: block;
   float: left;
   width: 50%;
-  clear: both;
+  clear: both;*/
 }
 
 .victorian-illustration {
-  display: inline;
-  margin: 6em;
+  /*display: inline;
+  margin: 6em;*/
+}
+
+.serperation {
+  min-height: 280px;
+  min-width: 400px;
+  background-size: cover;
+}
+
+.seperation-img {
+
+
 }
 
 .gilded {
-  min-height: 520px;
+  /*min-height: 520px;*/
   background-color: #fbf1dc;
   padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .gilded h2 {
@@ -335,25 +410,27 @@ p {
 }
 
 .gilded-text {
-  display: block;
+  /*display: block;
   float: left;
-  width: 50%;
+  width: 50%;*/
 }
 
 .gilded-famous {
-  display: block;
+  /*display: block;
   float: left;
   width: 50%;
-  clear: both;
+  clear: both;*/
 }
 
 .gilded-illustration {
-  display: inline;
-  margin: 10em;
+  /*display: inline;
+  margin: 10em;*/
 }
 
+
 .FLW {
-  min-height: 520px;
+  margin-top: 160px;
+  /*min-height: 520px;*/
   background-color: #fbf1dc;
   padding: 20px;
 }
@@ -363,27 +440,28 @@ p {
 }
 
 .FLW-text {
-  display: block;
+  /*display: block;
   float: left;
-  width: 50%;
+  width: 50%;*/
 }
 
 .FLW-famous {
-  display: block;
+  /*display: block;
   float: left;
   width: 50%;
-  clear: both;
+  clear: both;*/
 }
 
 .FLW-illustration {
-  display: inline;
-  margin: 6em;
+  /*display: inline;
+  margin: 6em;*/
 }
 
 .mid-century {
-  min-height: 520px;
+  /*min-height: 520px;*/
   background-color: #fbf1dc;
   padding: 20px;
+  margin-top: 100px;
 }
 
 .mid-century h2 {
@@ -391,21 +469,21 @@ p {
 }
 
 .mid-century-text {
-  display: block;
+  /*display: block;
   float: left;
-  width: 50%;
+  width: 50%;*/
 }
 
 .mid-century-famous {
-  display: block;
+  /*display: block;
   float: left;
   width: 50%;
-  clear: both;
+  clear: both;*/
 }
 
 .mid-century-illustration {
-  display: inline;
-  margin: 6em;
+  /*display: inline;
+  margin: 6em;*/
 }
 
 /*.masthead h1 {
@@ -441,7 +519,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Responsive images base, put your images in a wrapper
+/* Responsive images base, put your images in a wrapper */
 img {
     display: block;
     width: 100%;
@@ -471,6 +549,12 @@ body {
   padding: 0;
 }
 
+
+@media only screen and (min-width: 400px){
+  .heading {
+    margin-left: 10%;
+  }
+}
 /*Here's a sample media query for you. This one is for desktop styles.*/
 /*@media only screen and (min-width: 960px) {
 
