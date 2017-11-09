@@ -103,6 +103,32 @@ p {
   text-transform: lowercase;
 }
 
+.swing {
+  transform-origin: center;
+  animation-name: swing;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  }
+
+  @keyframes swing {
+  20% {
+  transform: rotate3d(0, 0, 1, 10deg);
+  }
+  40% {
+  transform: rotate3d(0, 0, 1, -5deg);
+  }
+  60% {
+  transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+  transform: rotate3d(0, 0, 1, -5deg);
+  }
+  100% {
+  transform: rotate3d(0, 0, 1, 0deg);
+  }
+  }
+
+
 .masthead-img {
   display: inline;
   position: relative;
@@ -283,7 +309,6 @@ p {
 
 
 .colonial {
-  /*min-height: 520px;*/
   background-color: #fbf1dc;
   padding: 20px;
 }
@@ -292,29 +317,7 @@ p {
   line-height: 1;
 }
 
-.colonial-text {
-  /*display: block;*/
-  /*float: left;*/
-  /*width: 50%;*/
-}
-
-.colonial-famous {
-  /*display: block;*/
-  /*float: left;*/
-  /*width: 50%;*/
-  /*clear: both;*/
-}
-
-.colonial-illustration {
-  /*display: inline;*/
-  /*margin: 6em;*/
-  /*width: 50%;*/
-  /*float: right;*/
-}
-
 .neoclassical {
-  /*min-height: 520px;
-  order: 2;*/
   background-color: #fbf1dc;
   padding: 20px;
   padding-top: 100px;
@@ -324,23 +327,6 @@ p {
   line-height: 1;
 }
 
-.neoclassical-text {
-  /*display: block;
-  float: left;
-  width: 50%;*/
-}
-
-.neoclassical-famous {
-  /*display: block;
-  float: left;
-  width: 50%;
-  clear: both;*/
-}
-
-.neoclassical-illustration {
-  /*display: inline;
-  margin: 6em;*/
-}
 
 .pullquote {
   min-height: 280px;
@@ -358,32 +344,13 @@ p {
 }
 
 .victorian {
-  /*min-height: 520px;*/
   background-color: #fbf1dc;
   padding: 20px;
   margin-top: 80px;
 }
 
 .victorian h2 {
-  line-height: 0px;
-}
-
-.victorian-text {
-  /*display: block;
-  float: left;
-  width: 50%;*/
-}
-
-.victorian-famous {
-  /*display: block;
-  float: left;
-  width: 50%;
-  clear: both;*/
-}
-
-.victorian-illustration {
-  /*display: inline;
-  margin: 6em;*/
+  line-height: 1;
 }
 
 .serperation {
@@ -392,107 +359,66 @@ p {
   background-size: cover;
 }
 
-.seperation-img {
-
-
-}
 
 .gilded {
-  /*min-height: 520px;*/
   background-color: #fbf1dc;
   padding: 20px;
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .gilded h2 {
-  line-height: 0px;
-}
-
-.gilded-text {
-  /*display: block;
-  float: left;
-  width: 50%;*/
-}
-
-.gilded-famous {
-  /*display: block;
-  float: left;
-  width: 50%;
-  clear: both;*/
-}
-
-.gilded-illustration {
-  /*display: inline;
-  margin: 10em;*/
+  line-height: 1;
 }
 
 
 .FLW {
-  margin-top: 160px;
-  /*min-height: 520px;*/
+  margin-top: 140px;
   background-color: #fbf1dc;
   padding: 20px;
 }
 
 .FLW h2 {
-  line-height: 0px;
+  line-height: 1;
 }
 
-.FLW-text {
-  /*display: block;
-  float: left;
-  width: 50%;*/
-}
-
-.FLW-famous {
-  /*display: block;
-  float: left;
-  width: 50%;
-  clear: both;*/
-}
-
-.FLW-illustration {
-  /*display: inline;
-  margin: 6em;*/
-}
 
 .mid-century {
-  /*min-height: 520px;*/
   background-color: #fbf1dc;
   padding: 20px;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .mid-century h2 {
-  line-height: 0px;
+  line-height: 1;
 }
 
-.mid-century-text {
-  /*display: block;
-  float: left;
-  width: 50%;*/
-}
-
-.mid-century-famous {
-  /*display: block;
-  float: left;
-  width: 50%;
-  clear: both;*/
-}
-
-.mid-century-illustration {
-  /*display: inline;
-  margin: 6em;*/
-}
-
-/*.masthead h1 {
-  line-height: 74px;
-}*/
 
 .navigation h2 {
   color: #B25A44;
 
+}
+
+.footer {
+  min-height: 280px;
+  background-color: #b25a44;
+  padding-top: 60px;
+}
+
+.footer h3 {
+  line-height: 24px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fbf1dc;
+  text-align: center;
+}
+
+.footer p {
+  padding-top: 100px;
+  font-size: 10px;
+  color: #fbf1dc;
+  text-align: center;
 }
 
 audio,
@@ -550,9 +476,10 @@ body {
 }
 
 
-@media only screen and (min-width: 400px){
+@media only screen and (max-width: 400px){
   .heading {
     margin-left: 10%;
+    margin-top: 10%;
   }
 }
 /*Here's a sample media query for you. This one is for desktop styles.*/
